@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 680px;
+}
+#gameBoard {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #f1f1f1;
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+div > span {
+    opacity: 0;
+}
+
+.open {
+    cursor: default;
+}
+.open > span{
+    opacity: 1;
+}
+
+.playAgain {
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    display: none;
+}
